@@ -8,11 +8,11 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.io.Serializable;
-@AllArgsConstructor
+@Entity
 @Getter
 @Setter
-@Entity
 @ToString
+
 public class Player implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,5 +20,6 @@ public class Player implements Serializable {
     private Long id;
     private String name;
     private String character;
-    private String playerPic;
+    //private String playerPic;
+    private String playerCode;
 }
