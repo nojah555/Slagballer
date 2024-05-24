@@ -10,4 +10,5 @@ public class SlagballerApplication {
 		SpringApplication.run(SlagballerApplication.class, args);
 	}
 
+
 }

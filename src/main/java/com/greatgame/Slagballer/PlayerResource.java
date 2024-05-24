@@ -9,13 +9,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin
 @RestController
 @RequestMapping("/player")
 @AllArgsConstructor
 public class PlayerResource {
     private final PlayerService playerService;
-
 @GetMapping("/all")
     public ResponseEntity<List<Player>> getAllPlayers(){
     List<Player> players = playerService.findAllPlayers();
